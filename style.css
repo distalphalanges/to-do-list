@@ -1,0 +1,101 @@
+body {
+	font-family:sans-serif;
+	font-size: 14px;
+	color: #555;
+}
+
+.container {
+	margin-top: 20px;
+}
+
+.main {
+	width: 350px;
+	margin: 0 auto;
+}
+
+.input input {
+	width: 267px;
+	height: 32px;
+	padding: 6px;
+	font-size: 20px;
+	display: inline-block;
+}
+
+.input button {
+	color: #777;
+	width: 50px;
+	height: 48px;
+	font-size: 20px;
+	border-style: none;
+	display: inline-block;
+}
+
+.lists button {
+	border-style: none;
+	float: right;
+	margin-left: 4px;
+	padding: 3px 8px;
+	font-size: 1em;
+	color: #777;
+}
+
+#todo-ol {
+	width: 300px;
+}
+
+#todo-ol li {
+	margin-left: -20px;
+    padding: 3px 6px;
+	line-height: 20px;
+}
+
+#todo-ol li input {
+	display: none;
+}
+
+#todo-ol li.editing span {
+	display:none;
+}
+
+#todo-ol li.editing input {
+	display: initial;
+}
+
+#done-ul {
+	width: 318px;
+	padding: 5px 10px;
+	list-style: none;
+	background: #a8f0a8;
+    border-top: 1.5px solid #00bb00;
+	color: #1b981b;
+}
+
+#done-ul span {
+	margin: -5px 0 6px 0;
+	padding-bottom: 4px;
+}
+
+#done-ul li{
+    padding: 3px 4px;
+	line-height: 20px;
+	width: 100%;
+}
+
+#done-ul button {
+    color: #e9fbe9;
+    background: #66cc66;
+}
+
+.no-tasks-yet {
+	display: none;
+}
+
+#clear {
+	font-weight: bold;
+}
+
+.delete {
+	font-weight: bold;
+/*	background: #f7baba;
+	color: #e23636;*/
+}
