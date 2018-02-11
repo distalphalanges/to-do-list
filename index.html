@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>To-do list</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -19,18 +20,19 @@
 			</div>
 		</div>
 	</div>
+	<div class="psst">Psst...you can edit to-do's by clicking on them too...<a href="https://icons8.com">icons by icons8.</a></div>
 	<script type="template" id="todo-template">
 		<li class="task" data-index={{index}}>
 			<span class="task-name">{{task-name}}</span>
-			<input class="edit" type="text" value="{{task-name}}">
-			<button class="delete">x</button>
-			<button class="complete">done</button>
+			<input type="text" class="edit" value="{{task-name}}">
+			<div class="delete"></div>
+			<div class="complete"></div>
 		</li>
 	</script>
 	<script type="template" id="done-template">
 		<li class="task" data-index={{index}}>
 			<span class="task-name">{{task-name}}</span>
-			<button class="undo">undo</button>
+			<div class="undo"></div>
 		</li>
 	</script>
 <script src="script.js"></script>

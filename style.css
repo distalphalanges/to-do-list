@@ -1,11 +1,17 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Lato';
+	font-size: 18px;
 }
 
 body {
-	font-family:sans-serif;
-	font-size: 18px;
 	color: #555;
+}
+
+center {
+    color: #AAA;
+    font-family: monospace;
+    font-size: 14px;
 }
 
 .container {
@@ -50,11 +56,15 @@ body {
 }
 
 #todo-ol li {
-    margin: 10px 0px 10px 24px;
+	margin: 6px 0 6px 24px;
+    padding: 5px 0;
 }
 
 #todo-ol li input {
 	display: none;
+	width: 80%;
+	height: 1em;
+    border: none;
 }
 
 #todo-ol li.editing span {
@@ -88,7 +98,6 @@ body {
 #done-ul button {
     color: #e9fbe9;
     background: #66cc66;
-    width: 64px;
     text-align: center;
 }
 
@@ -100,6 +109,64 @@ body {
 	font-weight: bold;
 }
 
+.complete, .delete, .undo {
+	height: 24px;
+	width: 24px;
+    margin: 0 2px;
+    border-radius: 4px;	
+	cursor: pointer;
+}
+
+.complete, .delete, .undo {
+	float: right;
+}
+
+/*.edit {
+    background-image: url('pencil.png');
+    background-size: 90%;
+    background-position: 2px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: sub;
+}*/
+
+.complete {
+    background-color: #e5ffe5;
+    border: 2px solid #b5f2b5;
+}
+
+.complete:hover {
+	background-color: #c0fcc0;
+    border: 2px solid #7ce97c;
+}
+
+.complete:active {
+	background-image: url('checkmark.png');
+	background-size: cover;
+}
+
 .delete {
-	font-weight: bold;
+	background-image: url('trashcan.png');
+	background-size: cover;
+}
+
+.delete:hover {
+	background-image: url('trashcan-hover.png');
+	background-color: #eee;
+}
+
+.delete:active {
+	background-color: #ddd;
+}
+
+.undo {
+	background-image: url(undo.png);
+    background-size: cover;
+}
+
+.psst {
+	position: absolute;
+	bottom: 10px;
+    color: #AAA;
+    font-size: 14px;
 }
