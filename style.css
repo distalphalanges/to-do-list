@@ -63,6 +63,7 @@ a {
 	width: 80%;
 	height: 1em;
     border: none;
+	font-size: 18px;
 }
 
 #todo-ol li.editing span {
